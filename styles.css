@@ -1,0 +1,174 @@
+* {
+    background-color: hsl(0, 0%, 15%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul, ol, li, p, div, span {
+    background-color: inherit;
+    padding-bottom: 10px;
+    transition: all .2s ease-in-out;
+}
+
+span {
+    color: hsl(46, 100%, 62%);
+}
+
+p ~ p {
+    background-color: inherit;
+    padding-bottom: 0px;
+}
+
+.footer {
+    display: grid;
+    background-color: hsl(0, 0%, 15%);
+    color: hsl(46, 100%, 62%);
+    justify-self: center;
+    justify-items: center;
+}
+
+.container {
+    padding: 10px;
+}
+
+.textCol {
+    color:hsl(0, 0%, 100%);
+    background-color: inherit;
+}
+
+.highlight {
+    background-color: hsl(46, 100%, 62%);
+    color: hsl(0, 0%, 15%);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.hrBelow {
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-top: 0px;
+    background-color: inherit;
+}
+
+h2 {
+    font-size: 3rem;
+    background-color: inherit;
+}
+
+h3 {
+    font-size: 2rem;
+    background-color: inherit;
+}
+
+h4 {
+    font-size: 1rem;
+    background-color: inherit;
+}
+
+h5, h6 {
+    background-color: inherit;
+}
+
+a {
+    display: inline-block;
+    color: hsl(46, 100%, 62%);
+    background-color: inherit;
+    transition: all .2s ease-in-out;
+}
+
+.greyLink {
+    color: hsl(0, 0%, 15%);
+}
+
+a:hover {
+    opacity: .6;
+    transform: translateY(-3px);
+}
+
+p:hover, li:hover {
+    transform: translateX(4px);
+}
+
+.text {
+    font-size: 1rem;
+}
+
+.colTemplateHero {
+    display: inline-flex;
+    grid-auto-flow: row;
+    grid-template-columns: 320px 1fr;
+}
+
+.colTemplate {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6;
+}
+
+.span2 {
+    grid-column: span 2;
+}
+
+hr {
+    max-width: 80%;
+}
+
+.skills {
+    margin: 10px;
+    padding: 10px;
+}
+
+.imgHero {
+    max-width: 100%;
+}
+
+.workExperience {
+    grid-row-start: 3; 
+    grid-row-end: 6;
+}
+
+.otherInformation {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.badge {
+    background-color: hsl(46, 100%, 62%);
+    color: hsl(0, 0%, 15%);
+    padding: 4px 8px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+.anim {
+    animation: attn;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes attn {
+    from {
+        margin-left: 10;
+    }
+
+    to {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .colTemplate {
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 6;
+    }
+}
