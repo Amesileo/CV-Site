@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>George William James Heath-Collins CV</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./images/GeorgeWilliamJames.ico">
 </head>
 <body>
     <!--Title-->
@@ -38,15 +39,27 @@
         <!--Skills-->
         <div class="colTemplate textCol span2 highlight">
             <h3 class="span2 skills">Skills</h3>
-            <div class="highlight">
+            <!--Separated for display on a larger screen-->
+            <div class="highlight singleContactSectionLarge">
                 <ul>
                     <li>Project Management - Successfully delivered IT Projects for international companies and smaller businesses</li>   
                     <li>BAU Changes - Liaised with Stakeholders and delivered meaningful changes to the conduction of business processes</li>
                     <li>Process Automation - On both an Employee and Consultancy level, processes have been reviewed and updated to streamline product management and drive growth of company and profit</li>
                 </ul>
             </div>
-            <div class="highlight">
+            <div class="highlight singleContactSectionLarge">
                 <ul>
+                    <li>Programming & Scripting - Developed applications and automations using various languages, including Python3, Javascript, C#, VBA, Powershell and Batch. </li>   
+                    <li>IT Knowledge - Qualified Ubiquiti Enterprise Wireless Admin, 3rd line technical support, telephony, MDM config and Data Management to the standard of Cyber Essentials+</li>
+                    <li>Excellent soft skills - Maintaining vendor relationships, interacting with internal and external stakeholders, sharing positivity with Colleagues </li>
+                </ul>
+            </div>
+            <!--Combined for display on a smaller screen-->
+            <div class="highlight singleContactSection">
+                <ul>
+                    <li>Project Management - Successfully delivered IT Projects for international companies and smaller businesses</li>   
+                    <li>BAU Changes - Liaised with Stakeholders and delivered meaningful changes to the conduction of business processes</li>
+                    <li>Process Automation - On both an Employee and Consultancy level, processes have been reviewed and updated to streamline product management and drive growth of company and profit</li>
                     <li>Programming & Scripting - Developed applications and automations using various languages, including Python3, Javascript, C#, VBA, Powershell and Batch. </li>   
                     <li>IT Knowledge - Qualified Ubiquiti Enterprise Wireless Admin, 3rd line technical support, telephony, MDM config and Data Management to the standard of Cyber Essentials+</li>
                     <li>Excellent soft skills - Maintaining vendor relationships, interacting with internal and external stakeholders, sharing positivity with Colleagues </li>
@@ -159,14 +172,15 @@
                 </p>           
             </div>
             <div>
-                <h4>Is talking more you style?</h4>
+                <h4>Is talking more your style?</h4>
                 <p>
                     You can reach me via mobile! Give me a call on <a class="greyLink" href="tel:07502354942">07502 354942</a> and we'll catch up. Please be sure to introduce yourself and what you want to discuss, and we can go from there.
                 </p>
-                <h4 style="margin-bottom: 0%;">Feeling lazy?</h4>
-                    <p>I'll contact you!</p>
+                <!--Combined for display on a smaller screen-->
+                <h4 class="singleContactSection" style="margin-bottom: 0%;">Feeling shy?</h4>
+                    <p class="singleContactSection">I'll contact you!</p>
                 <div class="contactContainer">
-                    <form action="https://api.web3forms.com/submit" method="post" class="contactLeft highlight" ID="contactForm">
+                    <form action="https://api.web3forms.com/submit" method="post" class="contactLeft highlight singleContactSection" ID="contactForm">
                         <input type="text" name="name" placeholder="Your name" class="contactInputs" required>
                         <input type="email" name="email" placeholder="Your email" class="contactInputs" required>
                         <textarea id="message" name="message" placeholder="Your message" class="contactInputs" required></textarea>
@@ -176,7 +190,25 @@
                         <button type="submit">Submit</button>
                     </form>
                 </div>
-                
+            </div>
+        </div>
+    </div>
+    <!--Separated for display on a larger screen-->
+        <div class="container textCol highlight span2 singleContactSectionLarge">
+            <div class="contactContainer span2">
+                <h3 class="singleContactSectionLarge" style="margin-bottom: 0%;">Feeling shy?</h3>
+                <p class="singleContactSectionLarge">I'll contact you!</p>
+            </div>
+            <div class="contactContainer span2">
+                <form action="https://api.web3forms.com/submit" method="post" class="contactLeft highlight singleContactSectionLarge" ID="contactForm">
+                    <input type="text" name="name" placeholder="Your name" class="contactInputs" required>
+                    <input type="email" name="email" placeholder="Your email" class="contactInputs" required>
+                    <textarea id="message" name="message" placeholder="Your message" class="contactInputs" required></textarea>
+                    <input type="hidden" name="apikey" value="1b4012be-dcc2-4324-bdb1-379b9982ab3f">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="hidden" name="from_name" value="GWJ Portfolio">
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </div>
     </div>
