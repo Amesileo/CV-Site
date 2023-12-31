@@ -175,16 +175,17 @@ button:hover {
     display: block;
     align-items: center;
     justify-content: start;
-    padding-left: -10px;
+    padding-left: 10px;
     padding-right: 20px;
 }
 
 .contactLeft {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items:center; 
     gap: 20px;
     padding: 0%;
+    padding-left: 10px;
     margin: 0%;
 }
 
@@ -206,6 +207,10 @@ button:hover {
     outline: 0px;
 }
 
+.singleContactSection {
+    display: none;
+}
+
 @keyframes attn {
     from {
         margin-left: 10;
@@ -224,4 +229,13 @@ button:hover {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 6;
     }
+
+    .singleContactSection {
+        display: flex;
+    }
+
+    .singleContactSectionLarge {
+        display: none;
+    }
 }
+
