@@ -153,6 +153,59 @@ hr {
     animation-iteration-count: infinite;
 }
 
+button {
+    background-color: hsl(0, 0%, 15%); 
+    border: 0px;
+    border-radius: 25px;
+    /*color: hsl(46, 100%, 62%);*/
+    color: white;
+    scale: 1.5;
+    margin-left: 10px;
+    align-self: flex-end;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+.contactContainer {
+    height: auto;
+    display: block;
+    align-items: center;
+    justify-content: start;
+    padding-left: -10px;
+    padding-right: 20px;
+}
+
+.contactLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.contactInputs {
+    background-color: antiquewhite;
+    color: hsl(0, 0%, 15%);
+    border: 0px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    resize: none;
+}
+
+#message {
+    min-height: 150px;
+}
+
+.contactInputs:focus {
+    outline: 0px;
+}
+
 @keyframes attn {
     from {
         margin-left: 10;
